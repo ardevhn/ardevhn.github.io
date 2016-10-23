@@ -127,8 +127,13 @@
                         <div class="fs1" aria-hidden="true" data-icon="&#xe031;"></div>
                         <h3 class="sub-title">High quality code</h3>
                         <div class="desc">
-                            <p>We value clean code and we follow SOLID principles. To make sure we do this we like to have continuous integration as part of our development process, we set different development environments and we test our code..</p>
+<<<<<<< HEAD
+                            <p>We value clean code and we follow SOLID principles. To make sure we do this we like to have continueos integration as part of our development process, we set different development environments and we test our code..</p>
                         </div>
+=======
+                            <p>We value clean code and we follow SOLID principles. To make sure we do this we like to have continuous integration as part of our development process, we set different development environments and we test our code..</p>
+                        </div>            
+>>>>>>> a5dd55c4947a20bbb353055ec54be1a97b683b58
                     </div><!--//item-inner-->
                 </div><!--//item-->
             </div><!--//row-->
@@ -171,7 +176,12 @@
                             <h3 class="sub-title">Quick Links</h3>
                             <ul class="list-unstyled">
                                 <li><a href="/about">About us</a></li>
+<<<<<<< HEAD
+                                <li><a href="/work">Our work</a></li>
                                 <li><a href="/contact">Contact</a></li>
+=======
+                                <li><a href="/contact">Contact</a></li>                                
+>>>>>>> a5dd55c4947a20bbb353055ec54be1a97b683b58
                             </ul>
                         </div><!--//footer-col-inner-->
                     </div><!--//foooter-col-->
