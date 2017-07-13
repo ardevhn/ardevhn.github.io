@@ -1,3 +1,2 @@
-# A & R Development S. de R.L.
-# Custom Software Development
-# Honduras
+# ardev
+## we build web and mobile apps for startup and agencies
