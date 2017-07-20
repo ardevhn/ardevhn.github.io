@@ -4140,6 +4140,18 @@ ul.project-detail-block, .project-detail-block ul {
     }
 }
 
+@media (max-width: 620px) {
+	.flex-prev {
+        opacity: 0;
+        visibility: hidden;
+    }
+	
+    .flex-next {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 @media (max-width: 480px) {
     .fullscreen-carousel .overlay-hero .caption-hero .inner-caption {
         padding-left: 15px;
