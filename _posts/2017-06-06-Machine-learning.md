@@ -1,5 +1,7 @@
 ---
 layout: post
+page_description: ARDEV delivers innovative technology solutions for solving real-world business challenges.
+keywords: Product Engineering, Enterprise IT Services, Mobile Application
 category: AI
 image_path: /assets/img/full/04.jpg
 author: Diego M

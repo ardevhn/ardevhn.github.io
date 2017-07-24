@@ -1,5 +1,7 @@
 ---
 layout: post
+page_description: ARDEV delivers innovative technology solutions for solving real-world business challenges.
+keywords: Product Engineering, Enterprise IT Services, Mobile Application
 category: test
 image_path: /assets/img/full/10.jpg
 author: Darth Vader

@@ -1,5 +1,7 @@
 ---
 layout: post
+page_description: ARDEV delivers innovative technology solutions for solving real-world business challenges.
+keywords: Product Engineering, Enterprise IT Services, Mobile Application
 category: test
 image_path: /assets/img/full/10.jpg
 author: John M
@@ -9,6 +11,7 @@ author_linkedin: https://www.linkedin.com/
 author_github: https://github.com/
 author_stack_overflow: https://stackoverflow.com/
 description: Blandit vel, luctus pulvinar, hendrerit id, Maecenas tempus, tellus eget lorem. Maecenas nec odio et is ante.
+
 ---
 
 <div class="post-entry">
