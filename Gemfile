@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby RUBY_VERSION
+ruby "2.4.1"
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 # Hello! This is where you manage which Jekyll version is used to run.
