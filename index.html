@@ -128,6 +128,62 @@ keywords: Product Engineering, Enterprise IT Services, Mobile Application
 
 <hr />
 
+<!-- Portfolio Section -->
+<section id="portfolio" class="wow fadeInUp bg-img19 overlay-light ptb ptb-sm-80">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				
+				<h2 class="h2">Portfolio</h2>
+				<div class="spacer-15"></div>
+				
+				<div class="page-breadcrumb">
+					<span class="singlepage-nav"><a href="#portfolio">Home</a></span>/<span>Portfolio</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ptb ptb-sm-80">
+    <div class="container">
+        <!-- work Filter -->
+        <div class="row">
+            <ul class="col container-filter categories-filter">
+                <li><a class="categories active" data-filter="*">All</a></li>
+                <li><a class="categories" data-filter=".mobile">Mobile</a></li>
+                <li><a class="categories" data-filter=".ai">AI</a></li>
+                <li><a class="categories" data-filter=".web">Web</a></li>
+            </ul>
+        </div>
+        <!-- End work Filter -->
+        <div class="row container-grid nf-col-2">
+
+	        {% for item in site.portfolioItems %}
+			    <div class="nf-item {{ item.filter }} spacing">
+	                <div class="item-box">
+	                    <a href="">
+	                        <img alt="1" src="{{ item.image_path }}" class="item-container">
+	                        <div class="item-mask">
+	                            <div class="item-caption">
+	                                <h5 class="white">{{ item.title }}</h5>
+	                                <p class="white">{{ item.description }}</p>
+	                            </div>
+	                        </div>
+	                    </a>
+	                </div>
+	            </div>
+		  	{% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+<!-- End Portfolio Section -->
+
+<hr />
+
 <!-- About Section -->
 
 <section id="about" class="wow fadeInUp bg-img2 overlay-light ptb ptb-sm-80">
