@@ -163,15 +163,13 @@ external:
 	        {% for item in site.portfolioItems %}
 			    <div class="nf-item {{ item.filter }} spacing">
 	                <div class="item-box">
-	                    <a href="">
-	                        <img alt="1" src="{{ item.image_path }}" class="item-container">
-	                        <div class="item-mask">
-	                            <div class="item-caption">
-	                                <h5 class="white">{{ item.title }}</h5>
-	                                <p class="white">{{ item.description }}</p>
-	                            </div>
-	                        </div>
-	                    </a>
+                        <img alt="1" src="{{ item.image_path }}" class="item-container">
+                        <div class="item-mask">
+                            <div class="item-caption">
+                                <h5 class="white">{{ item.title }}</h5>
+                                <p class="white">{{ item.description }}</p>
+                            </div>
+                        </div>
 	                </div>
 	            </div>
 		  	{% endfor %}

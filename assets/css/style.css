@@ -4495,3 +4495,7 @@ ul.project-detail-block, .project-detail-block ul {
         visibility: hidden;
     }
 }
+
+.link-color{
+	color: #eabd6b
+}
