@@ -195,6 +195,36 @@
         drift.SNIPPET_VERSION = '0.3.1';
         drift.load('6tn8nhezm3t4');
         <!-- End of Async Drift Code -->
+
+        var $contactForm = $('#contact-form');
+        var resetForm = function explode(){
+            $contactForm[0].reset();
+            $contactForm.find('.successContent').hide();
+        };
+
+        $contactForm.submit(function(e) {
+            $('#icon-loader').show();
+            $contactForm.find('.successContent').hide();
+            $contactForm.find('.errorContent').hide();
+            e.preventDefault();
+            $.ajax({
+                url: 'https://formspree.io/admin@ardev.co',
+                method: 'POST',
+                data: $(this).serialize(),
+                dataType: 'json',
+                beforeSend: function() {
+                },
+                success: function(data) {
+                    $('#icon-loader').hide();
+                    $contactForm.find('.successContent').show();
+                    setTimeout(resetForm, 1000);
+                },
+                error: function(err) {
+                    $('#icon-loader').hide();
+                    $contactForm.find('.errorContent').show();
+                }
+            });
+        });
     </script>
 
 </body>
