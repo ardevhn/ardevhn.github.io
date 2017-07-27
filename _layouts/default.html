@@ -199,7 +199,6 @@
         var $contactForm = $('#contact-form');
         var resetForm = function explode(){
             $contactForm[0].reset();
-            $contactForm.find('.successContent').hide();
         };
 
         $contactForm.submit(function(e) {
@@ -217,7 +216,7 @@
                 success: function(data) {
                     $('#icon-loader').hide();
                     $contactForm.find('.successContent').show();
-                    setTimeout(resetForm, 1000);
+                    setTimeout(resetForm, 5000);
                 },
                 error: function(err) {
                     $('#icon-loader').hide();
