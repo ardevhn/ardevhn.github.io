@@ -188,6 +188,10 @@
         }();
         drift.SNIPPET_VERSION = '0.3.1';
         drift.load('6tn8nhezm3t4');
+        
+        drift.on('ready',function(api){
+            api.showWelcomeMessage()
+        })
         <!-- End of Async Drift Code -->
 
         var $contactForm = $('#contact-form');
