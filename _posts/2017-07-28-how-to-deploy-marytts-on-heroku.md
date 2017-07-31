@@ -5,7 +5,7 @@ keywords: Web, Text To Speech, Java
 category: Web
 image_path: /assets/img/blog/maryttslogo.png
 author: Dennis Molina
-autor_image: https://s.gravatar.com/avatar/0e168b4201a9a5d569c32f6b4e7a8389
+autor_image: https://s.gravatar.com/avatar/79297baaf4a3cc8d129992ce65d2aef1
 author_fb: https://www.facebook.com/dennismolinagarcia
 author_linkedin: https://www.linkedin.com/in/dennismolinadev/
 author_github: https://github.com/DennisMG
