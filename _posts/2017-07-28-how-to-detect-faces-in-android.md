@@ -3,7 +3,7 @@ layout: post
 page_description: ARDEV delivers innovative technology solutions for solving real-world business challenges.
 keywords: Android, Mobile Application
 category: Android
-image_path: /assets/img/full/10.jpg
+image_path: /assets/img/blog/Detect-faces-android/detect-android-faces-post.png
 author: Angela Delgado
 autor_image: https://s.gravatar.com/avatar/0e168b4201a9a5d569c32f6b4e7a8389
 author_fb: https://www.facebook.com/ajdm05
@@ -134,9 +134,12 @@ description: One of the apps trending now, are the ones related with filters. So
             <img alt="author" src="/assets/img/blog/Detect-faces-android/face-tracker.png">
         </div>
 
+
+
+        <h6>Conclusion </h6>
 		<p>
 			Now you should be able to run an app and see the rectangles around the faces that have been detected.
-			You have learned how to use <strong>Face Detection</strong> from Google Mobile Face API to detect faces. And also you're ready to start a camera preview without using the native camera, detecting faces and getting faces information; so, get deep and explore this magic world.
+			You have learned how to use <strong>Face Detection</strong> from Google Mobile Face API to detect faces. And also you're ready to start a camera preview without using the native camera, detecting faces and getting faces information; so, get deep and explore this magic world and join your new knowledge into a project.
 		</p>
 
 	</p>
