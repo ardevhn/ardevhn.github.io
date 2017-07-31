@@ -12,6 +12,7 @@ author_linkedin:
 author_github: https://github.com/ajdm05
 author_stack_overflow:
 description: One of the apps trending now, are the ones related with filters. So, we're going to introduce you into it; doing a face tracker demo.
+published: false
 ---
 
 <div class="post-entry">
