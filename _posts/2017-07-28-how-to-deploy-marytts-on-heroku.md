@@ -87,6 +87,6 @@ description: We are doing a step-by-step tutorial on how to setup a text to spee
 
 	<h5>Conclusion</h5>
 	<p class="lead">
-	You have successfully deployed your MaryTTS server to Heroku. Is a very straighforward procedure but it wasn´t at the moment we	decided we wanted to run MaryTTS to heroku. We hope 
+	You have successfully deployed your MaryTTS server to Heroku. Is a very straighforward procedure but it wasn´t at the moment we	decided we wanted to run MaryTTS in heroku, it took alot of researching and trial and error. Now you can implement any app that uses your own speech synthesizer service; from readers to bots, the applications are wide. So start coding, there are no limits.
 	</p>
 </div>
