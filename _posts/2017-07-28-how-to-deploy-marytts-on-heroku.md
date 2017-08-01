@@ -13,80 +13,78 @@ author_stack_overflow:
 description: We are doing a step-by-step tutorial on how to setup a text to speech synthesizer server on Heroku.
 ---
 
-<div class="post-entry">
-	<p>
-		MaryTTS is an open-source, multilingual Text-to-Speech Synthesis platform written in Java. We at ARDEV want to save you time and effort and provide you with an easy step-by-step guide so you can deploy your MaryTTS Server in Heroku. For this tutorial, we will be using MaryTTS Installer (you can find it 
- <a href="https://github.com/marytts/marytts-installer" target="_blank" style="color:#039be5;">here</a>)
-	</p>
-	
-	<h5>Prerequisites</h5>
-	<ul>
-	  <li>Github Repo: <a href="https://github.com/marytts/marytts-installer" target="_blank" style="color:#039be5;">MaryTTS</a></li>
-	  <li>A free <a href="https://signup.heroku.com/dc" target="_blank" style="color:#039be5;">Heroku Account</a></li>
-	  <li>The <a href="https://signup.heroku.com/dc" target="_blank" style="color:#039be5;">Heroku CLI</a></li>
-	</ul>
-	
-	
-	<h6>1. Configure to deploy to Heroku </h6>
-	<p class="lead">
-		Once the repository is cloned, open the <strong>build.gradle</strong> file and add a stage task, this will install the languages you want when the server is executed. Example:
+MaryTTS is an open-source, multilingual Text-to-Speech Synthesis platform written in Java. We at ARDEV want to save you time and effort and provide you with an easy step-by-step guide so you can deploy your MaryTTS Server in Heroku. For this tutorial, we will be using MaryTTS Installer (you can find it [here](https://github.com/marytts/marytts-installer))
 
-		<center><img src="/assets/img/blog/blog-step-1.png"></center>		
+##### Prerequisites
 
-	</p>
-	<small> <i>Note: you can read more about this tasks <a href="https://github.com/marytts/marytts-installer#install-a-voice" target="_blank" style="color:#039be5;">here</a></i> </small>
-	<br>
-	<br>
-	<h6>2. Add Procfile </h6>
-	<p class="lead">
-		A Procfile is a text file in the root directory of your application that defines process types and explicitly declares what command should be executed to start your app (<a href="https://devcenter.heroku.com/articles/deploying-gradle-apps-on-heroku#the-procfile" target="_blank" style="color:#039be5;">Reference</a>).
-		<p>
-			In other words, this file will contain the command Heroku will execute to start the MaryTTS Server. To start your MaryTTS instance your Procfile should contain something like this:
-		</p> 
-		<br>
-		<center><img src="/assets/img/blog/blog-step-2.png"></center>		
-		<br>
-	</p>
-	<P>
-		This declares a single process type: web, and the command needed to run it. The line ./marytts server runs our server but MaryTTS has a default port in which it listens to, so we need to tell it to listen to the port Heroku assigns our app dynamically. We do that by adding -Dsocket.port=$PORT.
-	</P>
-	
+*   Github Repo: [MaryTTS](https://github.com/marytts/marytts-installer)
+*   A free [Heroku Account](https://signup.heroku.com/dc)
+*   The [Heroku CLI](https://signup.heroku.com/dc)
 
-	<br>
-	<br>
-	<h6>3. Add changes</h6>
-	<p class="lead">
-			We need to track the new files we just added so in our terminal we run:
-		<center><img src="/assets/img/blog/blog-step-3.png"></center>
-		
+###### 1\. Configure to deploy to Heroku
 
-		
-	</p>
-	<br>
-	<br>
-	<h6>4. Creating a Heroku remote </h6>
-	<p class="lead">
-			Assuming you have the Heroku CLI installed (if not you can see instructions <a href="https://devcenter.heroku.com/articles/heroku-cli" target="_blank" style="color:#039be5;">here</a>) run the command <code>heroku create</code> in your terminal, this will add a new application on Heroku along with a git remote.
-	</p>
+Once the repository is cloned, open the **build.gradle** file and add a stage task, this will install the languages you want when the server is executed. Example:  
 
-	<center><img src="/assets/img/blog/blog-step-4.png"></center>
-	<br>
+<br>
 
-	<p>
-		Log in to your Heroku account:
-		<center><img src="/assets/img/blog/blog-step-5.png"></center>
-	</p>
+ <center><img src="/assets/img/blog/blog-step-1.png"></center>  
 
-	<p>
-		And push your changes to Heroku you must run:
-		<center><img src="/assets/img/blog/blog-step-6.png"></center>
-	</p>	
-	<p>
-		Heroku will deploy the server and will give you an URL you can use to access your server. You can open the app in your browser by running <code>heroku open</code>
-	</p>
+<br>
 
-	<h5>Conclusion</h5>
-	<p class="lead">
-	You have successfully deployed your MaryTTS server to Heroku. Is a very straightforward procedure but it wasn´t at the moment we decided we wanted to run MaryTTS in Heroku, it took a lot of researching and trial and error. Now you can implement any app that uses your own speech synthesizer service; from readers to bots, the applications are wide. So start coding, there are no limits.
-	</p>
-</div>
+<small>_Note: you can read more about this tasks [here](https://github.com/marytts/marytts-installer#install-a-voice)_</small>  
+
+###### 2\. Add Procfile
+
+A Procfile is a text file in the root directory of your application that defines process types and explicitly declares what command should be executed to start your app ([Reference](https://devcenter.heroku.com/articles/deploying-gradle-apps-on-heroku#the-procfile)).
+
+In other words, this file will contain the command Heroku will execute to start the MaryTTS Server. To start your MaryTTS instance your Procfile should contain something like this:  
+
+<br>
+
+ <center><img src="/assets/img/blog/blog-step-2.png"></center>  
+
+<br>
+
+This declares a single process type: web, and the command needed to run it. The line ./marytts server runs our server but MaryTTS has a default port in which it listens to, so we need to tell it to listen to the port Heroku assigns our app dynamically. We do that by adding -Dsocket.port=$PORT.
+
+###### 3\. Add changes
+
+We need to track the new files we just added so in our terminal we run:
+
+<br>
+
+ <center><img src="/assets/img/blog/blog-step-3.png"></center>  
+
+<br>
+
+###### 4\. Creating a Heroku remote
+
+Assuming you have the Heroku CLI installed (if not you can see instructions [here](https://devcenter.heroku.com/articles/heroku-cli)) run the command `heroku create` in your terminal, this will add a new application on Heroku along with a git remote.
+
+<br>
+
+ <center><img src="/assets/img/blog/blog-step-4.png"></center>  
+
+<br>
+
+Log in to your Heroku account:
+
+<br>
+
+ <center><img src="/assets/img/blog/blog-step-5.png"></center>  
+
+<br>
+
+And push your changes to Heroku you must run:
+
+<br>
+
+ <center><img src="/assets/img/blog/blog-step-6.png"></center>  
+
+<br>
+
+Heroku will deploy the server and will give you an URL you can use to access your server. You can open the app in your browser by running `heroku open`
+
+##### Conclusion
+
+You have successfully deployed your MaryTTS server to Heroku. Is a very straightforward procedure but it wasn´t at the moment we decided we wanted to run MaryTTS in Heroku, it took a lot of researching and trial and error. Now you can implement any app that uses your own speech synthesizer service; from readers to bots, the applications are wide. So start coding, there are no limits.
