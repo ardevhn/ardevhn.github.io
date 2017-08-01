@@ -11,7 +11,7 @@ author_linkedin: https://www.linkedin.com/in/dennismolinadev/
 author_github: https://github.com/DennisMG
 author_stack_overflow:
 description: We are doing a step-by-step tutorial on how to setup a text to speech synthesizer server on Heroku.
-published: false
+published: true
 ---
 
 MaryTTS is an open-source, multilingual Text-to-Speech Synthesis platform written in Java. We at ARDEV want to save you time and effort and provide you with an easy step-by-step guide so you can deploy your MaryTTS Server in Heroku. For this tutorial, we will be using MaryTTS Installer (you can find it [here](https://github.com/marytts/marytts-installer))
