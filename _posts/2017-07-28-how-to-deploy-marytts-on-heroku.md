@@ -15,7 +15,7 @@ description: We are doing a step-by-step tutorial on how to setup a text to spee
 
 <div class="post-entry">
 	<p>
-		MaryTTS is an open-source, multilingual Text-to-Speech Synthesis platform written in Java. We at ARDEV want to save you time and effort and provide you with and easy step-by-step guide so you can deploy your MaryTTS Server in Heroku. For this tutorial, we will be using MaryTTS Installer (you can find it 
+		MaryTTS is an open-source, multilingual Text-to-Speech Synthesis platform written in Java. We at ARDEV want to save you time and effort and provide you with an easy step-by-step guide so you can deploy your MaryTTS Server in Heroku. For this tutorial, we will be using MaryTTS Installer (you can find it 
  <a href="https://github.com/marytts/marytts-installer" target="_blank" style="color:#039be5;">here</a>)
 	</p>
 	
@@ -48,7 +48,7 @@ description: We are doing a step-by-step tutorial on how to setup a text to spee
 		<br>
 	</p>
 	<P>
-		This declares a single process type, web, and the command needed to run it. The line <code>./marytts server</code> runs our server but maryTTS has a default port in which it listens to, so we need to tell it to listen to the port Heroku assigns our app dynamically. We do that by adding <code>-Dsocket.port=$PORT</code>.
+		This declares a single process type: web, and the command needed to run it. The line ./marytts server runs our server but MaryTTS has a default port in which it listens to, so we need to tell it to listen to the port Heroku assigns our app dynamically. We do that by adding -Dsocket.port=$PORT.
 	</P>
 	
 
@@ -87,6 +87,6 @@ description: We are doing a step-by-step tutorial on how to setup a text to spee
 
 	<h5>Conclusion</h5>
 	<p class="lead">
-	You have successfully deployed your MaryTTS server to Heroku. Is a very straighforward procedure but it wasn´t at the moment we	decided we wanted to run MaryTTS in heroku, it took alot of researching and trial and error. Now you can implement any app that uses your own speech synthesizer service; from readers to bots, the applications are wide. So start coding, there are no limits.
+	You have successfully deployed your MaryTTS server to Heroku. Is a very straightforward procedure but it wasn´t at the moment we decided we wanted to run MaryTTS in Heroku, it took a lot of researching and trial and error. Now you can implement any app that uses your own speech synthesizer service; from readers to bots, the applications are wide. So start coding, there are no limits.
 	</p>
 </div>
